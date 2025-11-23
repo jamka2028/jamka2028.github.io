@@ -143,6 +143,7 @@
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
+        overflow-y: auto;
       }
       
       .modal-header {
@@ -157,6 +158,15 @@
         border: none;
         border-radius: 10px;
         width: 100%;
+      }
+      
+      .research-gif {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       }
       
       .close {
@@ -277,11 +287,9 @@
       </div>
       
       <div class="card clickable-card" onclick="openResearchModal('research2')">
-  <h3>Cognitive Enrichment and Human Capital: Evidence from a School Intervention in Kenya</h3>
-  <h5>Uyanga Byambaa, Jonathan Love, Jamyandagva Zulkhuu</h5>
-  <img src="funny.gif" alt="Research visualization" style="width: 100%; max-width: 400px; margin: 10px 0; border-radius: 8px;">
-  <p>Description of another research project. Click to view the full paper.</p>
-</div>
+        <h3>Cognitive Enrichment and Human Capital: Evidence from a School Intervention in Kenya</h3>
+        <h5>Uyanga Byambaa, Jonathan Love, Jamyandagva Zulkhuu</h5>
+      </div>
     </section>
 
     <!-- RESUME -->
@@ -316,9 +324,10 @@
     <div id="research2Modal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 style="margin: 0;">Research Project 2</h2>
+          <h2 style="margin: 0;">Cognitive Enrichment and Human Capital: Evidence from a School Intervention in Kenya</h2>
           <span class="close" onclick="closeModal('research2Modal')">&times;</span>
         </div>
+        <img src="funny.gif" alt="Research visualization" class="research-gif">
         <iframe src="path/to/research2.pdf" class="pdf-viewer" type="application/pdf"></iframe>
       </div>
     </div>
