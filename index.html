@@ -181,45 +181,6 @@
         color: #000;
       }
       
-      /* Left sidebar for SF images */
-      .sf-sidebar {
-        position: absolute;
-        left: 40px;
-        top: 150px;
-        z-index: 5;
-      }
-      
-      .sf-sidebar h3 {
-        font-size: 14px;
-        font-weight: 600;
-        color: #1d1d1f;
-        margin-bottom: 20px;
-        text-align: center;
-        letter-spacing: 0.5px;
-      }
-      
-      .sf-images {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-      }
-      
-      .sf-image {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 12px;
-        opacity: 0.9;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-      
-      .sf-image:hover {
-        opacity: 1;
-        transform: scale(1.05);
-      }
-      
       /* Right sidebar for companies */
       .companies-sidebar {
         position: absolute;
@@ -262,12 +223,9 @@
         height: 110px;
       }
       
-      /* Hide sidebars on smaller screens */
-      @media (max-width: 1400px) {
+      /* Hide sidebar on smaller screens */
+      @media (max-width: 1200px) {
         .companies-sidebar {
-          display: none;
-        }
-        .sf-sidebar {
           display: none;
         }
       }
@@ -376,18 +334,7 @@
 
     <footer>© 2025 Jamka Zulkhuu</footer>
     
-    <!-- SF Images Sidebar (Left) -->
-    <div class="sf-sidebar">
-      <h3>SAN FRANCISCO</h3>
-      <div class="sf-images">
-        <img src="sf1.jpg" alt="San Francisco 1" class="sf-image">
-        <img src="sf2.jpg" alt="San Francisco 2" class="sf-image">
-        <img src="sf3.jpg" alt="San Francisco 3" class="sf-image">
-        <img src="sf4.jpg" alt="San Francisco 4" class="sf-image">
-      </div>
-    </div>
-    
-    <!-- Companies Sidebar (Right) -->
+    <!-- Companies Sidebar -->
     <div class="companies-sidebar">
       <h3>COMPANIES I'VE<br>WORKED WITH</h3>
       <div class="company-logos">
